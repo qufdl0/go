@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내가 생각하는 글이란 표현이란 글쓰기란</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-start; /* 왼쪽 정렬 */
+            align-items: flex-start; /* 위쪽 정렬 */
+            font-family: "Times New Roman", Times, serif; /* 세리프 폰트 */
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            overflow: hidden; /* 화면 넘치는 부분 숨기기 */
+        }
+
+        .text-container {
+            font-size: 12pt; /* 텍스트 크기 */
+            line-height: 1.2; /* 행간 설정 */
+            width: auto;
+            max-width: 600px; /* 최대 너비 */
+        }
+
+        .word-box {
+            display: inline-block;
+            border: 1px solid black;
+            padding: 4px 8px;
+            margin: 2px;
+            transition: all 0.2s ease; /* 마우스 호버 시 박스 크기 변화 */
+        }
+
+        .word-box:hover {
+            transform: scale(1.5); /* 마우스 호버 시 크기 커지기 */
+            border-color: rgb(0, 0, 0); /* 호버 시 테두리 색상 변경 */
+        }
+
+        /* 클릭 시 박스 커지기 */
+        .clicked {
+            transform: scale(0.8); /* 클릭 시 박스 크기 커지기 */
+            transition: transform 2s ease; /* 크기 변화가 2초 동안 일어나도록 설정 */
+        }
+
+        /* 박스들이 작아지기 */
+        .small {
+            transform: scale(0.2); /* 박스가 작아짐 */
+        }
+
+        /* 텍스트 위치 조정 */
+        .text1 {
+            position: absolute;
+            top: 10%;
+            left: 5%;
+        }
+
+        .text2 {
+            position: absolute;
+            top: 45%;
+            left: 60%;
+        }
+
+        .text3 {
+            position: absolute;
+            top: 60%;
+            left: 10%;
+        }
+
+        .text4 {
+            position: absolute;
+            top: 10%;
+            left: 45%;
+            transform: translateX(-50%);
+        }
+
+        .text5 {
+            position: absolute;
+            top: 5%;
+            right: -2%; /* 오른쪽 위에 배치 */
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container text1">
+        <div class="text">
+            <span class="word-box">글쓰기</span>
+            <span class="word-box">과제</span>
+            <span class="word-box">나에게</span><br>
+            <span class="word-box">글쓰기</span>
+            <span class="word-box">과제가</span>
+            <span class="word-box">주어졌다</span><br>
+            <span class="word-box">근데</span><br>
+            <span class="word-box">글쓰기는</span>
+            <span class="word-box">어떻게</span>
+            <span class="word-box">해야하지</span><br>
+            <span class="word-box">그냥</span>
+            <span class="word-box">텍스트만</span>
+            <span class="word-box">친다고</span><br>
+            <span class="word-box">글쓰기가</span>
+            <span class="word-box">되는</span>
+            <span class="word-box">건가</span><br>
+            <span class="word-box">뭔가</span>
+            <span class="word-box">더</span>
+            <span class="word-box">계획도</span>
+            <span class="word-box">세우고</span><br>
+            <span class="word-box">체계적으로</span>
+            <span class="word-box">하지</span>
+            <span class="word-box">않아도</span>
+            <span class="word-box">되는건가</span><br>
+            <span class="word-box">정말</span>
+            <span class="word-box">이렇게만</span>
+            <span class="word-box">해도</span>
+            <span class="word-box">되는건가</span><br>
+        </div>
+    </div>
+
+    <div class="text-container text2">
+        <div class="text">
+            <span class="word-box">시낭독</span>
+            <span class="word-box">초등학교</span><br>
+            <span class="word-box">중학교</span>
+            <span class="word-box">국어</span>
+            <span class="word-box">시간때.</span><br>
+            <span class="word-box">선생님들이</span>
+            <span class="word-box">꼭</span>
+            <span class="word-box">시키는</span>
+            <span class="word-box">발표가</span><br>
+            <span class="word-box">있다</span><br>
+            <span class="word-box">시낭독인데</span><br>
+            <span class="word-box">꼭</span><br>
+            <span class="word-box">서서</span>
+            <span class="word-box">큰</span>
+            <span class="word-box">목소리로</span>
+            <span class="word-box">읽어야한다</span><br>
+            <span class="word-box">내가</span>
+            <span class="word-box">평소에</span>
+            <span class="word-box">발표를</span>
+            <span class="word-box">싫어하는</span><br>
+            <span class="word-box">성격은</span>
+            <span class="word-box">아닌데</span><br>
+            <span class="word-box">왜</span>
+            <span class="word-box">시낭독은</span>
+            <span class="word-box">유독</span>
+            <span class="word-box">부끄럽게</span><br>
+            <span class="word-box">느껴지는</span>
+            <span class="word-box">걸까</span>
+        </div>
+    </div>
+
+    <div class="text-container text3">
+        <div class="text">
+            <span class="word-box">추상적</span>
+            <span class="word-box">직관적</span><br>
+            <span class="word-box">어렵다</span>
+            <span class="word-box">쉽다</span><br>
+            <span class="word-box">복잡하다</span>
+            <span class="word-box">간결하다</span><br>
+            <span class="word-box">세계</span>
+            <span class="word-box">장소</span><br>
+            <span class="word-box">꿈</span>
+            <span class="word-box">현실</span><br>
+            <span class="word-box">의문</span>
+            <span class="word-box">인정</span><br>
+            <span class="word-box">시</span>
+            <span class="word-box">혹은</span>
+            <span class="word-box">문학</span>
+            <span class="word-box">뉴스</span>
+        </div>
+    </div>
+
+    <div class="text-container text4">
+        <div class="text">
+            <span class="word-box">온전한</span>
+            <span class="word-box">나</span><br>
+            <span class="word-box">평소에</span>
+            <span class="word-box">남에게</span>
+            <span class="word-box">보여지는</span>
+            <span class="word-box">모습에</span>
+            <span class="word-box">대해서</span><br>
+            <span class="word-box">신경을</span>
+            <span class="word-box">많이</span>
+            <span class="word-box">쓰는</span>
+            <span class="word-box">편이다</span><br>
+            <span class="word-box">어떻게</span>
+            <span class="word-box">생각할지</span><br>
+            <span class="word-box">겉모습은</span>
+            <span class="word-box">속일</span>
+            <span class="word-box">수</span>
+            <span class="word-box">있다고</span>
+            <span class="word-box">생각한다</span><br>
+            <span class="word-box">장신구들로</span>
+            <span class="word-box">표정으로</span><br>
+            <span class="word-box">하지만</span>
+            <span class="word-box">글은</span>
+            <span class="word-box">속일</span>
+            <span class="word-box">수</span>
+            <span class="word-box">없는거</span>
+            <span class="word-box">같다</span><br>
+            <span class="word-box">내가</span>
+            <span class="word-box">작성한</span>
+            <span class="word-box">글을</span>
+            <span class="word-box">보여주면</span><br>
+            <span class="word-box">내</span>
+            <span class="word-box">속을</span>
+            <span class="word-box">들켜버린거</span>
+            <span class="word-box">같은</span><br>
+            <span class="word-box">기분이</span>
+            <span class="word-box">든다</span><br>
+            <span class="word-box">근데</span>
+            <span class="word-box">그게</span>
+            <span class="word-box">뭔진</span>
+            <span class="word-box">나도</span>
+            <span class="word-box">모른다</span>
+        </div>
+    </div>
+
+    <div class="text-container text5">
+        <div class="text">
+            <span class="word-box">뭔가</span>
+            <span class="word-box">있는</span><br>
+            <span class="word-box">내가</span>
+            <span class="word-box">어렵다고</span>
+            <span class="word-box">스스로</span>
+            <span class="word-box">못을</span>
+            <span class="word-box">박은</span>
+            <span class="word-box">표현방법은</span><br>
+            <span class="word-box">계속해서</span>
+            <span class="word-box">내가</span>
+            <span class="word-box">열등하다고</span>
+            <span class="word-box">느껴지게</span>
+            <span class="word-box">된다</span><br>
+            <span class="word-box">그래서</span>
+            <span class="word-box">다른</span>
+            <span class="word-box">사람들이</span>
+            <span class="word-box">쓴</span>
+            <span class="word-box">글들은</span>
+            <span class="word-box">다 멋있다</span>
+            <span class="word-box">뭔가</span>
+            <span class="word-box">있는거</span>
+            <span class="word-box">같다</span><br>
+            <span class="word-box">이해하지</span>
+            <span class="word-box">못해도</span>
+            <span class="word-box">일단</span>
+            <span class="word-box">뭔가</span>
+            <span class="word-box">있는거</span>
+            <span class="word-box">같다</span><br>
+            <span class="word-box">그게</span>
+            <span class="word-box">나보다</span>
+            <span class="word-box">훨씬</span>
+            <span class="word-box">어리고</span>
+            <span class="word-box">모를지라도</span>
+        </div>
+    </div>
+
+    <script>
+        let isMouseMoved = false;
+
+        // 마우스가 움직일 때 박스를 작게 만들기
+        document.body.addEventListener('mousemove', () => {
+            if (!isMouseMoved) {
+                isMouseMoved = true;
+                const wordBoxes = document.querySelectorAll('.word-box');
+                wordBoxes.forEach(box => {
+                    box.classList.add('small');
+                });
+            }
+        });
+
+        // 클릭 시 클릭한 박스에 'clicked' 클래스 추가
+        const wordBoxes = document.querySelectorAll('.word-box');
+
+        wordBoxes.forEach(box => {
+            box.addEventListener('click', () => {
+                // 클릭된 박스에 'clicked' 클래스 추가
+                box.classList.add('clicked');
+
+                // 2초 후 'clicked' 클래스 제거
+                setTimeout(() => {
+                    box.classList.remove('clicked');
+                }, 2000); // 2초 후 다시 원래 크기로 돌아옴
+            });
+        });
+    </script>
+</body>
+</html>
